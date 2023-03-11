@@ -8,7 +8,7 @@ foreach (var pass in passwords)
 	{
 		foreach (var ch in pass)
 		{
-		    if (!char.IsLetterOrDigit(ch)  && ch != '_' && ch != '-')
+		    if (!char.IsLetterOrDigit(ch)  && ch != '_' && ch != '-') //if (!(char.IsLetterOrDigit(item) || item == '_' || item == '-'))
 		    {
 			isValid = false;
 			break;
